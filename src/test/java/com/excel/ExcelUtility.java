@@ -27,14 +27,13 @@ public class ExcelUtility {
     {
 
         int rowCount=sheet.getPhysicalNumberOfRows();
-        DataFormatter dataFormatter=new DataFormatter();
         System.out.println(rowCount);
     }
     public void getCellValue(int rowValue,int ColValue)
     {
         DataFormatter dataFormatter=new DataFormatter();
-        //Object value=dataFormatter.formatCellValue(sheet.getRow(rowValue).getCell(ColValue));
-        Object value=sheet.getRow(rowValue).getCell(ColValue).getStringCellValue();
+        Object value=dataFormatter.formatCellValue(sheet.getRow(rowValue).getCell(ColValue));
+        //Object value=sheet.getRow(rowValue).getCell(ColValue).getStringCellValue();
         System.out.println(value);
     }
 

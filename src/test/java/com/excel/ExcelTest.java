@@ -7,6 +7,6 @@ public class ExcelTest {
         String sheetName="Sheet1";
         ExcelUtility excelUtility=new ExcelUtility(path,sheetName);
         excelUtility.getRowCount();
-        excelUtility.getCellValue(1,2);
+        excelUtility.getCellValue(0,0);
     }
 }
